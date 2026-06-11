@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1024",
+  "title": "Cycle Entry",
+  "stage": "structures",
+  "module": "linked-list",
+  "difficulty": "hard",
+  "tags": ["linked-list", "fast-slow-pointers"],
+  "required": false,
+  "prerequisites": ["ALG-1023"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "pending"
+}

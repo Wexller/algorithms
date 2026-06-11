@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1018",
+  "title": "Missing Metric Position",
+  "stage": "patterns",
+  "module": "binary-search-intervals",
+  "difficulty": "medium",
+  "tags": ["binary-search", "arrays"],
+  "required": false,
+  "prerequisites": ["ALG-1017"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(log n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "pending"
+}

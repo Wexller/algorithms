@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1031",
+  "title": "Island Count",
+  "stage": "advanced",
+  "module": "graphs",
+  "difficulty": "medium",
+  "tags": ["graphs", "grid", "bfs"],
+  "required": true,
+  "prerequisites": ["ALG-1028"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(rows * cols)",
+  "expectedSpaceComplexity": "O(rows * cols)",
+  "status": "solved"
+}

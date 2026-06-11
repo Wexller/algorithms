@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1005",
+  "title": "First Unique Signal",
+  "stage": "foundations",
+  "module": "strings",
+  "difficulty": "easy",
+  "tags": ["strings", "frequency-map"],
+  "required": true,
+  "prerequisites": ["ALG-1004"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(k)",
+  "status": "pending"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1022",
+  "title": "Remove Nth Node From End",
+  "stage": "structures",
+  "module": "linked-list",
+  "difficulty": "medium",
+  "tags": ["linked-list", "two-pointers"],
+  "required": true,
+  "prerequisites": ["ALG-1019"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "solved"
+}

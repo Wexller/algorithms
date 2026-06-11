@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1032",
+  "title": "Course Order Check",
+  "stage": "advanced",
+  "module": "graphs",
+  "difficulty": "medium",
+  "tags": ["graphs", "topological-sort"],
+  "required": true,
+  "prerequisites": ["ALG-1031"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(V + E)",
+  "expectedSpaceComplexity": "O(V + E)",
+  "status": "pending"
+}

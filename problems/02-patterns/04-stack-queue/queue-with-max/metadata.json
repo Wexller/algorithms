@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1021",
+  "title": "Queue With Max",
+  "stage": "patterns",
+  "module": "stack-queue",
+  "difficulty": "hard",
+  "tags": ["queue", "monotonic-deque", "design"],
+  "required": false,
+  "prerequisites": ["ALG-1020"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(1) amortized",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "pending"
+}

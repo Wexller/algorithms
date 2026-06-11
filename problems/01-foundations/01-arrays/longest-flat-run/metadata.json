@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1003",
+  "title": "Longest Flat Run",
+  "stage": "foundations",
+  "module": "arrays",
+  "difficulty": "easy",
+  "tags": ["arrays", "scan"],
+  "required": false,
+  "prerequisites": ["ALG-1002"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "pending"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1030",
+  "title": "Meeting Room Load",
+  "stage": "structures",
+  "module": "heap-backtracking",
+  "difficulty": "medium",
+  "tags": ["heap", "intervals"],
+  "required": false,
+  "prerequisites": ["ALG-1029"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n log n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "pending"
+}

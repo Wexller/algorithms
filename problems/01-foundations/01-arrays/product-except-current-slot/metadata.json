@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1002",
+  "title": "Product Except Current Slot",
+  "stage": "foundations",
+  "module": "arrays",
+  "difficulty": "medium",
+  "tags": ["arrays", "prefix", "suffix"],
+  "required": true,
+  "prerequisites": ["ALG-1001"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1) extra space",
+  "status": "pending"
+}

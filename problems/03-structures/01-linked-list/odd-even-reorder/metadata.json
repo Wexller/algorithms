@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1023",
+  "title": "Odd Even Reorder",
+  "stage": "structures",
+  "module": "linked-list",
+  "difficulty": "medium",
+  "tags": ["linked-list", "reordering"],
+  "required": true,
+  "prerequisites": ["ALG-1022"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "pending"
+}

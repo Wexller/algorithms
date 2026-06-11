@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1007",
+  "title": "Frequency Balance",
+  "stage": "foundations",
+  "module": "hash-maps",
+  "difficulty": "easy",
+  "tags": ["hash-map", "counting", "strings"],
+  "required": true,
+  "prerequisites": ["ALG-1004"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(k)",
+  "status": "solved"
+}

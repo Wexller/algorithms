@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1015",
+  "title": "Max Flips Streak",
+  "stage": "patterns",
+  "module": "sliding-window",
+  "difficulty": "medium",
+  "tags": ["sliding-window", "binary-array"],
+  "required": false,
+  "prerequisites": ["ALG-1014"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "pending"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1009",
+  "title": "Longest Consecutive Days",
+  "stage": "foundations",
+  "module": "hash-maps",
+  "difficulty": "medium",
+  "tags": ["hash-set", "arrays"],
+  "required": false,
+  "prerequisites": ["ALG-1008"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "pending"
+}

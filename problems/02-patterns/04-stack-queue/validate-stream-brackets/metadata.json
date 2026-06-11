@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1019",
+  "title": "Validate Stream Brackets",
+  "stage": "patterns",
+  "module": "stack-queue",
+  "difficulty": "easy",
+  "tags": ["stack", "strings"],
+  "required": true,
+  "prerequisites": ["ALG-1016"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "solved"
+}

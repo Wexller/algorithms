@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1010",
+  "title": "Best Pair Under Budget",
+  "stage": "patterns",
+  "module": "two-pointers",
+  "difficulty": "medium",
+  "tags": ["two-pointers", "arrays", "optimization"],
+  "required": true,
+  "prerequisites": ["ALG-1007"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n log n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "solved"
+}

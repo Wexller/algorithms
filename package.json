@@ -1,0 +1,43 @@
+{
+  "name": "local-algorithm-academy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "test": "vitest run",
+    "new:problem": "node --import tsx scripts/new-problem.ts",
+    "seed:problems": "node --import tsx scripts/seed-problems.ts",
+    "validate:repo": "node --import tsx scripts/validate-repo.ts",
+    "progress": "node --import tsx scripts/progress.ts",
+    "check": "npm run lint && npm run test && npm run validate:repo"
+  },
+  "lint-staged": {
+    "*.{ts,js,json,md}": [
+      "prettier --write"
+    ],
+    "*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/node": "^24.0.14",
+    "eslint": "^9.30.1",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0",
+    "vitest": "^3.2.4",
+    "zod": "^4.0.5"
+  }
+}

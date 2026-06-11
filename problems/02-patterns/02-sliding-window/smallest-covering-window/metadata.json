@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1014",
+  "title": "Smallest Covering Window",
+  "stage": "patterns",
+  "module": "sliding-window",
+  "difficulty": "hard",
+  "tags": ["sliding-window", "strings", "frequency-map"],
+  "required": true,
+  "prerequisites": ["ALG-1013"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(k)",
+  "status": "pending"
+}

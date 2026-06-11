@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1020",
+  "title": "Daily Warmer Span",
+  "stage": "patterns",
+  "module": "stack-queue",
+  "difficulty": "medium",
+  "tags": ["monotonic-stack", "arrays"],
+  "required": true,
+  "prerequisites": ["ALG-1019"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "pending"
+}

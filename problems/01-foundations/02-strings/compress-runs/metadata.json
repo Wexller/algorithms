@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1006",
+  "title": "Compress Runs",
+  "stage": "foundations",
+  "module": "strings",
+  "difficulty": "medium",
+  "tags": ["strings", "two-pointers"],
+  "required": false,
+  "prerequisites": ["ALG-1005"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "pending"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1034",
+  "title": "Climb With Cost",
+  "stage": "advanced",
+  "module": "dynamic-programming",
+  "difficulty": "easy",
+  "tags": ["dynamic-programming", "state-transition"],
+  "required": true,
+  "prerequisites": ["ALG-1031"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "solved"
+}

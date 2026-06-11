@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1035",
+  "title": "Longest Palindromic Subsequence",
+  "stage": "advanced",
+  "module": "dynamic-programming",
+  "difficulty": "medium",
+  "tags": ["dynamic-programming", "strings"],
+  "required": true,
+  "prerequisites": ["ALG-1034"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n^2)",
+  "expectedSpaceComplexity": "O(n^2)",
+  "status": "pending"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1017",
+  "title": "Capacity Threshold Search",
+  "stage": "patterns",
+  "module": "binary-search-intervals",
+  "difficulty": "medium",
+  "tags": ["binary-search", "answer-search"],
+  "required": true,
+  "prerequisites": ["ALG-1016"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n log answer)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "pending"
+}

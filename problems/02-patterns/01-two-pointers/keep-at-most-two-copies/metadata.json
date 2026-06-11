@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1011",
+  "title": "Keep At Most Two Copies",
+  "stage": "patterns",
+  "module": "two-pointers",
+  "difficulty": "medium",
+  "tags": ["two-pointers", "arrays", "in-place"],
+  "required": true,
+  "prerequisites": ["ALG-1010"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "pending"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1036",
+  "title": "Partition Equal Half",
+  "stage": "advanced",
+  "module": "dynamic-programming",
+  "difficulty": "medium",
+  "tags": ["dynamic-programming", "subset-sum"],
+  "required": false,
+  "prerequisites": ["ALG-1035"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n * sum)",
+  "expectedSpaceComplexity": "O(sum)",
+  "status": "pending"
+}

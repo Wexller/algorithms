@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1027",
+  "title": "BST Two Sum",
+  "stage": "structures",
+  "module": "trees-bst",
+  "difficulty": "medium",
+  "tags": ["bst", "trees", "hash-set"],
+  "required": false,
+  "prerequisites": ["ALG-1026"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "pending"
+}

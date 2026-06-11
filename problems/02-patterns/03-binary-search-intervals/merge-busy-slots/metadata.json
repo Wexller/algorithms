@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1016",
+  "title": "Merge Busy Slots",
+  "stage": "patterns",
+  "module": "binary-search-intervals",
+  "difficulty": "easy",
+  "tags": ["intervals", "sorting"],
+  "required": true,
+  "prerequisites": ["ALG-1013"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n log n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "solved"
+}

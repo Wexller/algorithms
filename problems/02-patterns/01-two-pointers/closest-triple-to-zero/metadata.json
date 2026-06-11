@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1012",
+  "title": "Closest Triple To Zero",
+  "stage": "patterns",
+  "module": "two-pointers",
+  "difficulty": "medium",
+  "tags": ["two-pointers", "arrays", "sorting"],
+  "required": false,
+  "prerequisites": ["ALG-1011"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n^2)",
+  "expectedSpaceComplexity": "O(1) extra space",
+  "status": "pending"
+}

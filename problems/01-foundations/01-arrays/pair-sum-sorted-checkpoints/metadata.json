@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1001",
+  "title": "Pair Sum In Sorted Checkpoints",
+  "stage": "foundations",
+  "module": "arrays",
+  "difficulty": "easy",
+  "tags": ["arrays", "two-pointers", "sorting"],
+  "required": true,
+  "prerequisites": [],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "solved"
+}

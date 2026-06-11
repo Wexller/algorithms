@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1026",
+  "title": "Lowest Common Manager",
+  "stage": "structures",
+  "module": "trees-bst",
+  "difficulty": "medium",
+  "tags": ["trees", "recursion"],
+  "required": true,
+  "prerequisites": ["ALG-1025"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(h)",
+  "status": "pending"
+}

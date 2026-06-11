@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1033",
+  "title": "Cheapest Route With Stops",
+  "stage": "advanced",
+  "module": "graphs",
+  "difficulty": "hard",
+  "tags": ["graphs", "shortest-path"],
+  "required": false,
+  "prerequisites": ["ALG-1032"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(E log V)",
+  "expectedSpaceComplexity": "O(V + E)",
+  "status": "pending"
+}

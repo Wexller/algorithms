@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1008",
+  "title": "Group Shifted Words",
+  "stage": "foundations",
+  "module": "hash-maps",
+  "difficulty": "medium",
+  "tags": ["hash-map", "grouping", "strings"],
+  "required": true,
+  "prerequisites": ["ALG-1007"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n * m)",
+  "expectedSpaceComplexity": "O(n * m)",
+  "status": "pending"
+}

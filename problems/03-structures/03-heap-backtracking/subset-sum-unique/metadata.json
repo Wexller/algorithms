@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1029",
+  "title": "Subset Sum Unique",
+  "stage": "structures",
+  "module": "heap-backtracking",
+  "difficulty": "medium",
+  "tags": ["backtracking", "subsets"],
+  "required": true,
+  "prerequisites": ["ALG-1028"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(2^n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "pending"
+}

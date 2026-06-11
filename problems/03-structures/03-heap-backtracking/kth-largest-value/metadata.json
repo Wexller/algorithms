@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1028",
+  "title": "Kth Largest Value",
+  "stage": "structures",
+  "module": "heap-backtracking",
+  "difficulty": "medium",
+  "tags": ["heap", "selection"],
+  "required": true,
+  "prerequisites": ["ALG-1025"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n log k)",
+  "expectedSpaceComplexity": "O(k)",
+  "status": "solved"
+}

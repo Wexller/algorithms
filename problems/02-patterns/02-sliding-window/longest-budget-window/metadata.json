@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1013",
+  "title": "Longest Budget Window",
+  "stage": "patterns",
+  "module": "sliding-window",
+  "difficulty": "medium",
+  "tags": ["sliding-window", "arrays", "sum"],
+  "required": true,
+  "prerequisites": ["ALG-1010"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(1)",
+  "status": "solved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1025",
+  "title": "Level With Maximum Sum",
+  "stage": "structures",
+  "module": "trees-bst",
+  "difficulty": "medium",
+  "tags": ["trees", "bfs"],
+  "required": true,
+  "prerequisites": ["ALG-1022"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(w)",
+  "status": "solved"
+}

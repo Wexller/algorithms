@@ -1,0 +1,14 @@
+{
+  "id": "ALG-1004",
+  "title": "Reverse Words With Clean Spaces",
+  "stage": "foundations",
+  "module": "strings",
+  "difficulty": "easy",
+  "tags": ["strings", "parsing"],
+  "required": true,
+  "prerequisites": ["ALG-1001"],
+  "sourceType": "original-local",
+  "expectedTimeComplexity": "O(n)",
+  "expectedSpaceComplexity": "O(n)",
+  "status": "solved"
+}
