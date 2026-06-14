@@ -3,7 +3,9 @@ import path from "node:path";
 import { getProblemDirectories } from "./lib/fs-utils.js";
 import {
   getModuleDisplayName,
+  getModuleDirectoryName,
   getStageDisplayName,
+  getStageDirectoryName,
   metadataSchema,
   MODULES,
   STAGES,
@@ -19,17 +21,39 @@ type ModuleSummary = {
   requiredSolved: number;
 };
 
+type ProblemEntry = {
+  dir: string;
+  metadata: ProblemMetadata;
+};
+
+function getModuleCompletionStatus(summary: ModuleSummary): string {
+  if (summary.requiredSolved === summary.requiredTotal) {
+    return "complete";
+  }
+
+  if (summary.requiredSolved > 0) {
+    return "in-progress";
+  }
+
+  return "not-started";
+}
+
 async function main(): Promise<void> {
   const problemDirs = await getProblemDirectories(path.resolve("problems"));
-  const problems: ProblemMetadata[] = await Promise.all(
-    problemDirs.map(async (problemDir) =>
-      metadataSchema.parse(
-        JSON.parse(
-          await readFile(path.join(problemDir, "metadata.json"), "utf8"),
-        ),
-      ),
+  const entries: ProblemEntry[] = await Promise.all(
+    problemDirs.map(
+      async (problemDir) =>
+        ({
+          dir: problemDir,
+          metadata: metadataSchema.parse(
+            JSON.parse(
+              await readFile(path.join(problemDir, "metadata.json"), "utf8"),
+            ),
+          ),
+        }) satisfies ProblemEntry,
     ),
   );
+  const problems = entries.map((entry) => entry.metadata);
 
   const byModule = new Map<string, ModuleSummary>();
   for (const moduleName of MODULES) {
@@ -63,21 +87,57 @@ async function main(): Promise<void> {
   console.log(`Problems tracked: ${problems.length}`);
   console.log("");
 
+  const nextRequired = entries.find(
+    (entry) =>
+      entry.metadata.required &&
+      entry.metadata.status !== "solved" &&
+      entry.metadata.status !== "blocked",
+  );
+
+  if (nextRequired) {
+    console.log("Next required problem");
+    console.log(
+      `- ${nextRequired.metadata.id} ${nextRequired.metadata.title} (${nextRequired.dir})`,
+    );
+    console.log("");
+  }
+
   for (const stage of STAGES) {
     console.log(getStageDisplayName(stage));
     for (const [moduleName, summary] of byModule.entries()) {
-      const moduleProblems = problems.filter(
-        (problem) => problem.stage === stage && problem.module === moduleName,
+      const moduleEntries = entries.filter(
+        (entry) =>
+          entry.metadata.stage === stage &&
+          entry.metadata.module === moduleName,
       );
 
-      if (moduleProblems.length === 0) {
+      if (moduleEntries.length === 0) {
         continue;
       }
 
-      const requiredStatus = `${summary.requiredSolved}/${summary.requiredTotal}`;
-      console.log(
-        `- ${getModuleDisplayName(moduleName as ProblemMetadata["module"])}: solved=${summary.solved}, pending=${summary.pending}, blocked=${summary.blocked}, required=${requiredStatus}`,
+      const nextModuleRequired = moduleEntries.find(
+        (entry) =>
+          entry.metadata.required && entry.metadata.status !== "solved",
       );
+      const requiredStatus = `${summary.requiredSolved}/${summary.requiredTotal}`;
+      const solvedStatus = `${summary.solved}/${summary.total}`;
+      const moduleStatus = getModuleCompletionStatus(summary);
+      const modulePath = path.join(
+        "problems",
+        getStageDirectoryName(stage),
+        getModuleDirectoryName(moduleName as ProblemMetadata["module"]),
+      );
+      console.log(
+        `- ${getModuleDisplayName(moduleName as ProblemMetadata["module"])}: module=${moduleStatus}, solved=${solvedStatus}, required solved=${requiredStatus}, pending=${summary.pending}, blocked=${summary.blocked}`,
+      );
+      console.log(`  path: ${modulePath}`);
+      if (nextModuleRequired) {
+        console.log(
+          `  next required: ${nextModuleRequired.metadata.id} ${nextModuleRequired.metadata.title}`,
+        );
+      } else {
+        console.log("  next required: all required problems solved");
+      }
     }
     console.log("");
   }
