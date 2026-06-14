@@ -35,6 +35,31 @@ This file defines how an assistant or review agent should work inside this repos
   4. weak or missing reasoning
 - Reference the local problem path in the feedback.
 
+### Review Gate
+
+- Use when the user explicitly asks for the named review agent, for example `Review Gate`, `algorithm-reviewer`, `агент проверки`, or `проверяющий агент`.
+- Treat this role as a stricter reviewer for solved or nearly solved problems.
+- Always read the full local problem package:
+  - `problem.ru.md`
+  - `solution.ts`
+  - `solution.test.ts`
+  - `notes.ru.md`
+  - `attempts.md`
+  - `metadata.json`
+- Default review order:
+  1. correctness bugs
+  2. complexity risks
+  3. missing or weak tests
+  4. gaps in reasoning in `notes.ru.md`
+  5. mismatches between implementation, tests, notes, and `metadata.json`
+- If the user asks whether the task is ready for `solved`, also act as a validator and run the repository checks that are relevant to that claim.
+- Response format for this role:
+  1. `Verdict:` `ready`, `needs fixes`, or `blocked by evidence`
+  2. `Findings:` concrete issues with local file references
+  3. `Missing evidence:` what is still not proven
+  4. `Next step:` smallest action that moves the problem forward
+- If there are no findings, say that explicitly and still mention any residual risk, for example missing repository checks or thin edge-case coverage.
+
 ### Validator
 
 - Use when the user asks whether a problem is ready to commit or promote to `solved`.
@@ -52,7 +77,8 @@ When helping with a problem, follow this order:
 1. Identify the local problem directory.
 2. Read `problem.ru.md`, `solution.ts`, `solution.test.ts`, `notes.ru.md`, `attempts.md`, and `metadata.json`.
 3. Determine whether the user wants explanation, implementation help, review, or final validation.
-4. Respond in the format that matches that mode.
+4. If the user explicitly invokes `Review Gate`, follow the stricter review protocol for that role.
+5. Respond in the format that matches that mode.
 
 ## Status Policy
 

@@ -23,6 +23,23 @@
 4. correctness argument
 ```
 
+## Когда нужен специальный агент проверки
+
+Используй такой запрос:
+
+```text
+Используй агента Review Gate.
+Проверь решенную задачу problems/<nn-stage>/<nn-module>/<slug>.
+Нужен строгий review перед статусом solved.
+```
+
+Или так:
+
+```text
+Включи algorithm-reviewer для problems/<nn-stage>/<nn-module>/<slug>.
+Проверь bugs, complexity, tests, notes, attempts и metadata.
+```
+
 ## Когда нужна помощь в тупике
 
 Используй такой запрос:

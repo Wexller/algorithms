@@ -134,7 +134,7 @@ The local hooks enforce:
 
 ## Assistant Usage
 
-This repo is built for local work with optional assistant support. See [docs/ru/assistant-workflows.md](/Users/workspace/Projects/self/algorithms/docs/ru/assistant-workflows.md) for exact prompts and expectations.
+This repo is built for local work with optional assistant support. See [docs/ru/assistant-workflows.md](/Users/workspace/Projects/self/algorithms/docs/ru/assistant-workflows.md) for exact prompts and expectations, and [docs/ru/review-agent.md](/Users/workspace/Projects/self/algorithms/docs/ru/review-agent.md) for the named review agent used to verify solved problems.
 
 ## Recommended Learning Path
 
